@@ -655,11 +655,11 @@
       <button class="tab-btn on" data-f="all">All</button>
       <button class="tab-btn" data-f="tabular">Tabular ML</button>
       <button class="tab-btn" data-f="cv">Computer Vision</button>
-      <button class="tab-btn" data-f="ts">Time Series</button>
+      <button class="tab-btn" data-f="de">Data Engineering</button>
     </div>
 
     <div class="proj-grid stagger" id="proj-grid">
-      <a class="proj-card" href="#" data-project="mcf" data-tags="tabular xgboost lightgbm catboost sarimax stacking insurance" data-cat="tabular ts">
+      <a class="proj-card" href="#" data-project="mcf" data-tags="tabular xgboost lightgbm catboost sarimax stacking insurance" data-cat="tabular">
         <div class="proj-thumb t-tabular">
           <span class="thumb-label" style="color:var(--slate)">Tabular ML · Time Series</span>
         </div>
@@ -679,7 +679,7 @@
         </div>
       </a>
 
-      <a class="proj-card" href="#" data-project="arkav" data-tags="air quality ispu time series tabular jakarta" data-cat="tabular ts">
+      <a class="proj-card" href="#" data-project="arkav" data-tags="air quality ispu time series tabular jakarta" data-cat="tabular">
         <div class="proj-thumb t-ts">
           <span class="thumb-label" style="color:var(--score-hi)">Tabular ML · Time Series</span>
         </div>
@@ -689,13 +689,13 @@
         </div>
       </a>
 
-      <a class="proj-card" href="#" data-project="bigdata" data-tags="big data kafka spark docker streamlit recommendation system" data-cat="tabular">
+      <a class="proj-card" href="#" data-project="bigdata" data-tags="big data kafka spark docker streamlit recommendation system" data-cat="de">
         <div class="proj-thumb t-bigdata">
-          <span class="thumb-label" style="color:var(--slate)">Big Data · ML Engineering</span>
+          <span class="thumb-label" style="color:var(--slate)">Data Engineering</span>
         </div>
         <div class="proj-body">
           <p class="proj-title">Movie Recommendation System</p>
-          <p class="proj-org">Big Data Final Project — ITS</p>
+          <p class="proj-org">Big Data Final Project</p>
         </div>
       </a>
 
@@ -836,9 +836,9 @@
     },
     bigdata: {
       title: 'Movie Recommendation System',
-      org: 'Big Data Final Project — ITS',
+      org: 'Big Data Final Project',
       score: '',
-      desc: 'A full-stack big data pipeline for real-time movie recommendations. Apache Kafka streams user activity data to MinIO object storage, Apache Spark processes it in batch every 5 minutes to train a collaborative filtering model, and a Streamlit dashboard serves live recommendations and search. The entire stack runs containerized with Docker Compose. Built as a group project (5 members).',
+      desc: 'A full-stack big data pipeline for real-time movie recommendations. Apache Kafka streams user activity data to MinIO object storage, Apache Spark processes it in batch every 5 minutes to train a collaborative filtering model, and a Streamlit dashboard serves live recommendations and search. The entire stack runs containerized with Docker Compose.',
       github: 'https://github.com/naufalhakims/bigdata-final-project',
       images: [
         { src: 'https://github.com/user-attachments/assets/31cd312c-8ea8-40e3-8426-a7f9b4d16ca0', cap: 'Streamlit landing page' },
