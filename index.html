@@ -321,6 +321,7 @@
     .t-cv      { background: linear-gradient(135deg, #b8d4dc, #94bece); }
     .t-ts      { background: linear-gradient(135deg, #f0ddd0, #e0c4b0); }
     .t-wip     { background: linear-gradient(135deg, #e8d8cc, #d8c0a8); }
+    .t-bigdata { background: linear-gradient(135deg, #c8dce0, #a0c8b8); }
 
     .proj-body { padding: 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
     .proj-title { font-family: var(--font-display); font-size: 15px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.3; }
@@ -688,6 +689,16 @@
         </div>
       </a>
 
+      <a class="proj-card" href="#" data-project="bigdata" data-tags="big data kafka spark docker streamlit recommendation system" data-cat="tabular">
+        <div class="proj-thumb t-bigdata">
+          <span class="thumb-label" style="color:var(--slate)">Big Data · ML Engineering</span>
+        </div>
+        <div class="proj-body">
+          <p class="proj-title">Movie Recommendation System</p>
+          <p class="proj-org">Big Data Final Project — ITS</p>
+        </div>
+      </a>
+
       <p class="proj-empty" id="proj-empty">No projects match your search.</p>
     </div>
   </div>
@@ -821,6 +832,19 @@
         { src: BASE + 'Arkavidia%20Datavidia%2010/images/category_mix_stacked.png',   cap: 'Air quality category distribution per station' },
         { src: BASE + 'Arkavidia%20Datavidia%2010/images/season_comparison.png',      cap: 'TIDAK SEHAT rate: dry season vs wet season' },
         { src: BASE + 'Arkavidia%20Datavidia%2010/images/station_month_heatmap.png',  cap: 'Station × month heatmap of TIDAK SEHAT rate' },
+      ]
+    },
+    bigdata: {
+      title: 'Movie Recommendation System',
+      org: 'Big Data Final Project — ITS',
+      score: '',
+      desc: 'A full-stack big data pipeline for real-time movie recommendations. Apache Kafka streams user activity data to MinIO object storage, Apache Spark processes it in batch every 5 minutes to train a collaborative filtering model, and a Streamlit dashboard serves live recommendations and search. The entire stack runs containerized with Docker Compose. Built as a group project (5 members).',
+      github: 'https://github.com/naufalhakims/bigdata-final-project',
+      images: [
+        { src: 'https://github.com/user-attachments/assets/31cd312c-8ea8-40e3-8426-a7f9b4d16ca0', cap: 'Streamlit landing page' },
+        { src: 'https://github.com/user-attachments/assets/04d2fa33-cdf6-4f81-9168-4ca4c6c87497', cap: 'Film search page' },
+        { src: 'https://github.com/user-attachments/assets/9993d784-14e8-4e6b-a563-6d9f1fba34d9', cap: 'Recommendation results page' },
+        { src: 'https://github.com/user-attachments/assets/9951a7d8-2031-4591-bd89-1266aab3d619', cap: 'Real-time streaming dashboard' },
       ]
     },
     bdc: {
