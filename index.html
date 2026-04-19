@@ -817,7 +817,7 @@
       title: 'Face Spoofing Detection',
       org: 'DAC FindIT 2026',
       score: 'Macro F1 0.7943',
-      desc: 'Multi-backbone vision ensemble (ConvNeXt-Large, DINOv2-Large, Swin-Large) for classifying real vs spoofed faces across 6 categories. Key steps: remove 34 cross-class duplicates, correct 189 label errors, freeze→unfreeze fine-tuning, 4-variant TTA, and targeted manual label overrides on low-confidence samples.',
+      desc: 'Built a three-backbone vision ensemble (ConvNeXt, DINOv2, Swin) to classify face images into six categories covering real faces and five spoofing attack types. The pipeline started with thorough data cleaning — removing cross-class duplicates and correcting mislabeled samples — before fine-tuning each backbone with class-weighted loss and test-time augmentation to improve robustness on ambiguous cases.',
       github: 'https://github.com/rmnovianmalcolmb/datascience/tree/main/FindIT%20DAC%202026',
       images: []
     },
